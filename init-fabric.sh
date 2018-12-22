@@ -3,10 +3,10 @@
 # adjust ---------------
 : ${FABRIC_VERSION:="1.2.0"}
 #-----------------------
-FABRIC_PACK="amd64-${FABRIC_VERSION}"
+FABRIC_PACK="1.4 64-${FABRIC_VERSION}"
 
 #if [ ! -f 'bin/configtxgen' ]; then
-#  ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')" | awk '{print tolower($0)}')
+#  ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/1.4 64/g')" | awk '{print tolower($0)}')
 #  sudo echo
 #  url=https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric/${ARCH}-${FABRIC_VERSION}/hyperledger-fabric-${ARCH}-${FABRIC_VERSION}.tar.gz
 #  echo "===> Downloading platform binaries: $url"
